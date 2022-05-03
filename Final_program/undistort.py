@@ -9,7 +9,7 @@ def undistort(path):
     img = cv2.imread(os.path.join(path, 'Original.png'))
 
     # Then from the camera calibration done in Matlab, the values for undistorting the picture is defined, a more
-    # detailed discretion of each of these intrinsic values is found in the rapport.
+    # detailed discretion of each of these intrinsic values is found in the report.
     ca_matrix = np.array([[1458.44479595608, 0, 945.728710457185],
                           [0, 1449.70998748913, 530.376541819689],
                           [0, 0, 1]])
