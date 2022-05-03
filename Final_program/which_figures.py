@@ -87,7 +87,7 @@ def which_figures(f_m, block_matrix, pixiel_scale):
 
     # -----------------------------------------Defining figure numbers-----------------------------------------------
 
-    # Each figur gets a number that represents that specific figure.
+    # Each figure gets a number that represents that specific figure.
     f_homer = 1
     f_marge = 2
     f_bart = 3
@@ -98,11 +98,11 @@ def which_figures(f_m, block_matrix, pixiel_scale):
     # To construct the Location matrix an if statement is used, where the first if statement for Homer is described,
     # and the if statement is the same for the rest of the figures. A walk through for Homer will now be done.
     # -----------------------------------------------Homer----------------------------------------------------------
-    # Firstly it is investigated if the Homer figur should be made, and if it is possible to make it with the blocks
+    # Firstly it is investigated if the Homer figure should be made, and if it is possible to make it with the blocks
     # that are present in the workspace.
 
     # Fist 3 zero arrays are made for each of the blocks in the figure, if the figure can be made the block position
-    # will be insertet in to the Homer1, Homer2 and Homer3 arrays.
+    # will be inserted in to the Homer1, Homer2 and Homer3 arrays.
     Homer1 = np.zeros((1, 5))
     Homer2 = np.zeros((1, 5))
     Homer3 = np.zeros((1, 5))
@@ -116,7 +116,7 @@ def which_figures(f_m, block_matrix, pixiel_scale):
     # The if statement hold a condition for each of the colors that are need in the figure, and the user defined
     # value that is 1 if the user wants to make the given figure.
     if bl_c >= 1 and y_c >= 1 and b_c >= 1 and f_m[0] == 1:
-        # If the if statement is ture, the block that are needed to make the figure a subtracted from the summed
+        # If the if statement is true, the block that are needed to make the figure a subtracted from the summed
         # color matrix c_m. This updates the summed color matrix c_m so that no block can be used twice.
         bl_c = bl_c - 1
         y_c = y_c - 1
