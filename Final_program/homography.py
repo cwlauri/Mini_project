@@ -1,4 +1,4 @@
-# in here will the picture be taken, and the homography wil be done
+# In here the picture will be taken, and the homography will be done
 import cv2
 import numpy as np
 import os
@@ -24,7 +24,7 @@ def homography(qr_dim, workspace_width_x, workspace_length_y, pixiel_scale, path
     # first a zero array is made to store the information
     qr_coor_new = np.zeros([4, 3])
 
-    # Now the connor coordinate for each QR code are convert to center coordinates.
+    # Now the corner coordinate for each QR code are convert to center coordinates.
     for k in range(len(qr_nr)):
         qr_coor_new[k, 0] = int(str(qr_nr[k])[-1])
         for i in range(2):
@@ -53,10 +53,10 @@ def homography(qr_dim, workspace_width_x, workspace_length_y, pixiel_scale, path
     src_y = (workspace_length_y - qr_dim) * pixiel_scale
     src_x = (workspace_width_x - qr_dim) * pixiel_scale
 
-    # Now the plan for the homography is construct, in the order 1,2,3 and 4
+    # Now the plan for the homography is constructed, in the order 1,2,3 and 4
     src_coor = np.array([[0, 0], [0, src_y], [src_x, 0], [src_x, src_y]])
 
-    # Then the output image size is increase so that the qr code are also in the picture
+    # Then the output image size is increased so that the qr code are also in the picture
     qr_size = qr_dim * pixiel_scale
     src_coor_new = src_coor + int(qr_size / 2)
 
