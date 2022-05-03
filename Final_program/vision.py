@@ -1,4 +1,4 @@
-# This function wil find the rotation, position and color of the DUPLO bricks or from now call blocks.
+# This function will find the rotation, position and color of the DUPLO bricks or from now called blocks.
 
 from collections import deque
 import cv2
