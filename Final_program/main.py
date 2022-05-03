@@ -5,7 +5,7 @@ from vision import vision
 from which_figures import which_figures
 
 # This program will run the whole code as one, before running the code a few things has to be done.
-# Fist the size of the QR code, the width and length of the work space has to be messuered.
+# Fist the size of the QR code, the width and length of the work space has to be measuered.
 # Next a pixel scale has to be set, this scale will scale the picture done in the homography.
 # Here it is set to 10 this means 1mm will become 10 pixels.
 
@@ -45,7 +45,7 @@ block_matrix = vision(qr_dim, pixiel_scale, path)
 
 # Then location matrix for robodk has to be set up and sorted, so that the order of block locations in the Location
 # matrix is in the right order to make the desired figures. The f_m matrix describes which figures the user wants to
-# make want to make, so if for the given figure type the value is 1, it should be made if the required block are in the
+# make, so if for the given figure type the value is 1, it should be made if the required block are in the
 # workspace. As default this value is 1 for all the figures, so that if it is possible to make the figure, it is made.
 
 # f_m = [homer, marge, bart, Lisa, maggi]
